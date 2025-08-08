@@ -1,0 +1,316 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer base {
+  :root {
+    /* Core neutral architectural palette */
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+
+    /* Primary: Deep charcoal */
+    --primary: 240 5.9% 10%;
+    --primary-foreground: 0 0% 98%;
+
+    /* Secondary: Warm off-white */
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+
+    /* Muted tones */
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+
+    /* Accent: Sophisticated gold */
+    --accent: 0 85% 50%;
+    --accent-foreground: 240 5.9% 10%;
+
+    /* Hero sophisticated tones */
+    --hero: 240 5.9% 10%;
+    --hero-foreground: 0 0% 98%;
+    --hero-accent: 0 85% 50%;
+    --hero-accent-foreground: 240 5.9% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 0 85% 50%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 0 0% 9%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 9%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 9%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 0 85% 50%;
+    --accent-foreground: 240 5.9% 10%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
+    --ring: 0 85% 50%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+    /* Swiper Navigation Arrows */
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: red; /* arrow color */
+    }
+
+    /* Swiper Pagination Dots */
+    .swiper-pagination-bullet {
+      background-color: red; /* dots */
+    }
+
+    .swiper-pagination-bullet-active {
+      background-color: red; /* active dot */
+    }
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Responsive Typography */
+  .heading-display {
+    @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight leading-none;
+  }
+
+  .heading-hero {
+    @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight;
+  }
+
+  .heading-section {
+    @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight;
+  }
+
+  .text-large {
+    @apply text-base sm:text-lg md:text-xl leading-relaxed;
+  }
+
+  /* Responsive Spacing */
+  .section-padding {
+    @apply py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24;
+  }
+
+  .container-padding {
+    @apply px-4 sm:px-6 lg:px-8 xl:px-12;
+  }
+
+  /* Responsive Grid Utilities */
+  .responsive-grid {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 lg:gap-8;
+  }
+
+  .responsive-grid-2 {
+    @apply grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 xl:gap-12;
+  }
+
+  /* Responsive Text Utilities */
+  .text-responsive-sm {
+    @apply text-xs sm:text-sm md:text-base;
+  }
+
+  .text-responsive-base {
+    @apply text-sm sm:text-base md:text-lg;
+  }
+
+  .text-responsive-lg {
+    @apply text-base sm:text-lg md:text-xl lg:text-2xl;
+  }
+
+  /* Responsive Button Utilities */
+  .btn-responsive {
+    @apply px-4 sm:px-6 lg:px-8 py-2 sm:py-3 text-sm sm:text-base font-semibold;
+  }
+
+  /* Responsive Card Utilities */
+  .card-responsive {
+    @apply p-4 sm:p-6 lg:p-8;
+  }
+
+  /* Geometric overlays */
+  .geometric-overlay {
+    background: linear-gradient(135deg, 
+      hsl(var(--hero)) 0%, 
+      hsl(var(--hero) / 0.9) 50%, 
+      hsl(var(--hero) / 0.8) 100%);
+  }
+
+  /* Hero background patterns */
+  .hero-pattern {
+    background-image: 
+      linear-gradient(45deg, hsl(var(--hero) / 0.1) 25%, transparent 25%), 
+      linear-gradient(-45deg, hsl(var(--hero) / 0.1) 25%, transparent 25%), 
+      linear-gradient(45deg, transparent 75%, hsl(var(--hero) / 0.1) 75%), 
+      linear-gradient(-45deg, transparent 75%, hsl(var(--hero) / 0.1) 75%);
+    background-size: 60px 60px;
+    background-position: 0 0, 0 30px, 30px -30px, -30px 0px;
+  }
+
+  /* Responsive Image Utilities */
+  .img-responsive {
+    @apply w-full h-auto object-cover;
+  }
+
+  /* Responsive Navigation */
+  .nav-responsive {
+    @apply flex flex-col sm:flex-row items-center gap-4 sm:gap-6 lg:gap-8;
+  }
+
+  /* Responsive Form Utilities */
+  .form-responsive {
+    @apply space-y-4 sm:space-y-6;
+  }
+
+  .form-grid-responsive {
+    @apply grid grid-cols-1 sm:grid-cols-2 gap-4;
+  }
+
+  /* Responsive Icon Utilities */
+  .icon-responsive {
+    @apply w-5 h-5 sm:w-6 sm:h-6;
+  }
+
+  .icon-container-responsive {
+    @apply w-10 h-10 sm:w-12 sm:h-12;
+  }
+
+  /* Responsive Animation Utilities */
+  .hover-responsive {
+    @apply transition-all duration-300 ease-in-out;
+  }
+
+  /* Responsive Focus Utilities */
+  .focus-responsive {
+    @apply focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2;
+  }
+
+  /* Responsive Touch Utilities */
+  .touch-responsive {
+    @apply active:scale-95 transition-transform duration-150;
+  }
+
+  /* Responsive Overflow Utilities */
+  .overflow-responsive {
+    @apply overflow-hidden;
+  }
+
+  /* Responsive Z-Index Utilities */
+  .z-responsive {
+    @apply z-10 sm:z-20 lg:z-30;
+  }
+
+  /* Responsive Border Utilities */
+  .border-responsive {
+    @apply border border-border/50;
+  }
+
+  /* Responsive Shadow Utilities */
+  .shadow-responsive {
+    @apply shadow-lg hover:shadow-xl transition-shadow duration-300;
+  }
+
+  /* Responsive Background Utilities */
+  .bg-responsive {
+    @apply bg-background/80 backdrop-blur-sm;
+  }
+
+  /* Responsive Text Color Utilities */
+  .text-responsive-primary {
+    @apply text-foreground hover:text-accent transition-colors;
+  }
+
+  /* Responsive Spacing Utilities */
+  .space-responsive {
+    @apply space-y-4 sm:space-y-6 lg:space-y-8;
+  }
+
+  .gap-responsive {
+    @apply gap-4 sm:gap-6 lg:gap-8;
+  }
+
+  /* Responsive Margin Utilities */
+  .margin-responsive {
+    @apply m-4 sm:m-6 lg:m-8;
+  }
+
+  .margin-top-responsive {
+    @apply mt-4 sm:mt-6 lg:mt-8;
+  }
+
+  .margin-bottom-responsive {
+    @apply mb-4 sm:mb-6 lg:mb-8;
+  }
+
+  /* Responsive Padding Utilities */
+  .padding-responsive {
+    @apply p-4 sm:p-6 lg:p-8;
+  }
+
+  .padding-x-responsive {
+    @apply px-4 sm:px-6 lg:px-8;
+  }
+
+  .padding-y-responsive {
+    @apply py-4 sm:py-6 lg:py-8;
+  }
+}
