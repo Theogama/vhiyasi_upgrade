@@ -1,7 +1,10 @@
+import { useState } from "react";
 import heroBackground from "@/assets/hero-background.jpg";
-import logo from "@/assets/logo.png"
+import logo from "@/assets/logo.png";
 
 export const HeroSection = () => {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   return (
     <section className="relative min-h-screen flex flex-col overflow-hidden">
       {/* Navigation */}
@@ -9,22 +12,107 @@ export const HeroSection = () => {
         <div className="container-padding max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
           {/* Logo / Brand */}
           <a href="#" className="text-white font-bold text-lg tracking-wider">
-            <img src={logo} alt="logo" width={135} height={135}/>
+            <img src={logo} alt="logo" width={135} height={135} />
           </a>
 
-          {/* Menu Items */}
+          {/* Desktop Menu Items */}
           <ul className="hidden md:flex items-center space-x-8 text-white font-medium">
-            <li><a href="#home" className="hover:text-accent transition-colors">HOME</a></li>
-            <li><a href="#about" className="hover:text-accent transition-colors">ABOUT</a></li>
-            <li><a href="#portfolio" className="hover:text-accent transition-colors">PORTFOLIO</a></li>
-            <li><a href="#contact" className="hover:text-accent transition-colors">CONTACT</a></li>
+            <li>
+              <a href="#home" className="hover:text-accent transition-colors">
+                HOME
+              </a>
+            </li>
+            <li>
+              <a href="#about" className="hover:text-accent transition-colors">
+                ABOUT
+              </a>
+            </li>
+            <li>
+              <a href="#portfolio" className="hover:text-accent transition-colors">
+                PORTFOLIO
+              </a>
+            </li>
+            <li>
+              <a href="#contact" className="hover:text-accent transition-colors">
+                CONTACT
+              </a>
+            </li>
           </ul>
 
           {/* Mobile Menu Icon */}
-          <button className="md:hidden text-white hover:text-accent transition-colors">
-            ☰
+          <button
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            className="md:hidden text-white hover:text-accent transition-colors focus:outline-none"
+            aria-label="Toggle menu"
+          >
+            {/* Hamburger icon */}
+            <svg
+              className="h-8 w-8"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              {mobileMenuOpen ? (
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              ) : (
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              )}
+            </svg>
           </button>
         </div>
+
+        {/* Mobile Menu Items */}
+        {mobileMenuOpen && (
+          <ul className="md:hidden bg-black bg-opacity-80 text-white font-medium flex flex-col space-y-4 py-4 px-6">
+            <li>
+              <a
+                href="#home"
+                onClick={() => setMobileMenuOpen(false)}
+                className="block hover:text-accent transition-colors"
+              >
+                HOME
+              </a>
+            </li>
+            <li>
+              <a
+                href="#about"
+                onClick={() => setMobileMenuOpen(false)}
+                className="block hover:text-accent transition-colors"
+              >
+                ABOUT
+              </a>
+            </li>
+            <li>
+              <a
+                href="#portfolio"
+                onClick={() => setMobileMenuOpen(false)}
+                className="block hover:text-accent transition-colors"
+              >
+                PORTFOLIO
+              </a>
+            </li>
+            <li>
+              <a
+                href="#contact"
+                onClick={() => setMobileMenuOpen(false)}
+                className="block hover:text-accent transition-colors"
+              >
+                CONTACT
+              </a>
+            </li>
+          </ul>
+        )}
       </nav>
 
       {/* Hero Content */}
@@ -54,7 +142,8 @@ export const HeroSection = () => {
 
             <div className="text-white/80 text-sm sm:text-base md:text-lg max-w-2xl mx-auto">
               <p className="mb-2 leading-relaxed">
-                ARCHITECTURAL <span className="text-accent">DESIGN</span> | INTERIOR <span className="text-accent">DESIGN</span> | CONSTRUCTION
+                ARCHITECTURAL <span className="text-accent">DESIGN</span> | INTERIOR{" "}
+                <span className="text-accent">DESIGN</span> | CONSTRUCTION
               </p>
             </div>
 
