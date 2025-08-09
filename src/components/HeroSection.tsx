@@ -1,4 +1,5 @@
 import heroBackground from "@/assets/hero-background.jpg";
+import logo from "@/assets/logo.png"
 
 export const HeroSection = () => {
   return (
@@ -8,14 +9,13 @@ export const HeroSection = () => {
         <div className="container-padding max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
           {/* Logo / Brand */}
           <a href="#" className="text-white font-bold text-lg tracking-wider">
-            <img src="/src/assets/logo.png" alt="logo" width={135} height={135}/>
+            <img src={logo} alt="logo" width={135} height={135}/>
           </a>
 
           {/* Menu Items */}
           <ul className="hidden md:flex items-center space-x-8 text-white font-medium">
             <li><a href="#home" className="hover:text-accent transition-colors">HOME</a></li>
             <li><a href="#about" className="hover:text-accent transition-colors">ABOUT</a></li>
-            
             <li><a href="#portfolio" className="hover:text-accent transition-colors">PORTFOLIO</a></li>
             <li><a href="#contact" className="hover:text-accent transition-colors">CONTACT</a></li>
           </ul>
