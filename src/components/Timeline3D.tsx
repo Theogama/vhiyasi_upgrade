@@ -1,4 +1,5 @@
 import React from "react";
+import walking from "@/assets/walking-man-removebg.png"
 
 const stages = [
   {
@@ -75,7 +76,7 @@ const Timeline3D = () => {
         </div>
         <div className="flex items-center justify-center p-4 sm:p-8">
             <img 
-              src="/src/assets/walking-man-removebg.png" 
+              src={walking} 
               alt="Walking man illustration" 
               className="w-full max-w-md sm:max-w-lg lg:max-w-xl xl:max-w-2xl h-auto"
             />
