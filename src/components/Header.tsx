@@ -11,7 +11,7 @@ export const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="flex items-center justify-center">
+            <div className="flex items-start justify-start">
               <img src="/src/assets/logo.png" alt="logo" width={135} height={135}/>
             </div>
           </div>

@@ -45,9 +45,9 @@ export const AboutSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 mb-16 lg:mb-24">
           <div className="space-y-4 sm:space-y-6">
             <p className="text-sm font-semibold text-accent mb-4 tracking-wider">ABOUT US</p>
-            <h2 className="heading-section text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-rose-950 mb-4 sm:mb-6">INTRO</h2>
+            <h2 className="heading-section text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-rose-950 mb-4 sm:mb-6">INTRO</h2>
             <h3 className="text-base sm:text-lg md:text-xl font-semibold mb-4 sm:mb-6 text-muted-foreground leading-relaxed">
-            We are an innovative architectural firm with expertise in designing mixed-use developments, alongside exceptional commercial, residential, and industrial spaces.
+            VHIYASI M3 ARCHITECTS is a leading architectural and construction firm dedicated to delivering innovative, sustainable, and client-focused solutions. We specialise in designing and building spaces that seamlessly combine functionality, aesthetics, and environmental responsibility.
             </h3>
           </div>
           <div className="space-y-4 sm:space-y-6">
@@ -56,8 +56,7 @@ export const AboutSection = () => {
               We offer solutions tailored to serve a wide variety of clients.
             </p>
             <p className="text-muted-foreground leading-relaxed text-sm sm:text-base">
-              Our product offering is designed to accommodate every type of client, budget, and project complexity.
-              Over the years, we have partnered with a diverse range of clients, with our core portfolio rooted in the development of residential estates, free-standing housing projects, commercial buildings, and large-scale structures. We are also steadily expanding our presence in the commercial sector, broadening both our portfolio and the spectrum of projects we undertake.
+              Our multidisciplinary team brings together expertise in architecture, engineering, and project management to ensure each project is executed to the highest standard — on time and within budget. From concept to completion, we work closely with clients to bring their vision to life, creating environments that inspire, endure, and enhance communities across the region. Excellence is our foundation; innovation is our craft.
             </p>
           </div>
         </div>

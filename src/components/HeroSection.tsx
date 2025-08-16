@@ -8,11 +8,11 @@ export const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex flex-col overflow-hidden">
       {/* Navigation */}
-      <nav className="absolute top-0 left-0 w-full z-20 mt-20">
+      <nav className="absolute top-0 left-0 w-full z-20 mt-10">
         <div className="container-padding max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
           {/* Logo / Brand */}
           <a href="#" className="text-white font-bold text-lg tracking-wider">
-            <img src={logo} alt="logo" width={135} height={135} />
+            <img src={logo} alt="logo" width={235} height={235}/>
           </a>
 
           {/* Desktop Menu Items */}
@@ -142,8 +142,8 @@ export const HeroSection = () => {
 
             <div className="text-white/80 text-sm sm:text-base md:text-lg max-w-2xl mx-auto">
               <p className="mb-2 leading-relaxed">
-                ARCHITECTURAL <span className="text-accent">DESIGN</span> | INTERIOR{" "}
-                <span className="text-accent">DESIGN</span> | CONSTRUCTION
+                ARCHITECTURAL <span className="text-accent">DESIGN</span> | SPACEPLANNING{" "}
+                <span className="text-accent">DESIGN</span> | CONSTRUCTION | ARTIFECTS
               </p>
             </div>
 

@@ -15,75 +15,80 @@ import project7 from "@/assets/project7.jpg";
 import project8 from "@/assets/project8.jpg";
 import project9 from "@/assets/project9.jpg";
 import project10 from "@/assets/project10.jpg";
+import project1_2 from "@/assets/p1/project1_2.jpg";
+import project1_3 from "@/assets/p1/project1_3.jpg";
+import project1_4 from "@/assets/p1/project1_4.jpg";
+import project1_5 from "@/assets/p1/project1_5.jpg";
+
 
 export const ProjectsSection = () => {
   const projects = [
     {
-      title: "Savannah Country Estate",
-      details: "5 Bedrooms | 600m/2 | Year: 2020",
-      images: [project1, project2, project3], // multiple images for carousel
+      title: "The Hills Game Reserve Estate",
+      details: "5 Bedrooms l 520m2 l Year: 2021",
+      images: [project1, project1_2, project1_3, project1_4, project1_5], // multiple images for carousel
       description:
         "Luxury residential estate with modern architectural design and premium finishes.",
     },
     {
-      title: "Hartebeesport",
-      details: "6 Bedrooms | 580m/2 | Year: 2020",
+      title: "Sunward Park, Boksburg",
+      details: "6 bedroom l 550m2 l Year 2022",
       images: [project2, project1, project4],
       description:
         "Contemporary family home featuring open-plan living and seamless indoor-outdoor flow.",
     },
     {
-      title: "012 Lifestyle",
-      details: "Restaurant/Eatery located in the heart of Pretoria",
+      title: "Seasons Lifestyle Estate",
+      details: "5 bedrooms l 535m2 l Year 2023",
       images: [project3, project5, project6],
       description:
         "Modern commercial dining space with sophisticated interior design and ambient lighting.",
     },
     {
-      title: "Urban Nexus",
-      details: "Restaurant/Eatery located in the heart of Pretoria",
+      title: "Ebotse golf & country estate ",
+      details: "5 bedroom l 650m2 l Year 2020",
       images: [project4, project6, project7],
       description:
         "A contemporary mixed-use design that seamlessly integrates residential, retail, and commercial spaces into a cohesive, pedestrian-friendly environment.",
     },
     {
-      title: "012 Lifestyle",
-      details: "Restaurant/Eatery located in the heart of Pretoria",
+      title: "Akwande Glamping Bar and Restaurant",
+      details: "Restaurant, Bar & Day club l 3000m2 l Year 2023",
       images: [project5, project3, project8],
       description:
         "Modern commercial dining space with sophisticated interior design and ambient lighting.",
     },
     {
-      title: "Haven Heights",
-      details: "Estate located in the heart of Midrand",
+      title: "Parkmore, Sandton",
+      details: "6 bedroom l 470m2 l Year 2021",
       images: [project6, project1, project9],
       description:
         "Modern commercial dining space with sophisticated interior design and ambient lighting.",
     },
     {
-      title: "Civic Core",
-      details: "Resort located in the heart of Johannesburg",
+      title: "President Park, Midrand",
+      details: "4 bedroom l 355m2 l Year 2022",
       images: [project7, project4, project10],
       description:
         "Modern commercial dining space with sophisticated interior design and ambient lighting.",
     },
     {
-      title: "EcoSphere",
-      details: "Restaurant/Eatery located in the heart of Pretoria",
+      title: "Summerplace Estate",
+      details: "5 bedroom l 550m2 l Year 2024",
       images: [project8, project2, project5],
       description:
         "Modern commercial dining space with sophisticated interior design and ambient lighting.",
     },
     {
-      title: "The Atrium",
-      details: "Restaurant/Eatery located in the heart of Pretoria",
+      title: "Summerplace Estate",
+      details: "5 bedroom l 550m2 l Year 2024",
       images: [project9, project3, project7],
       description:
         "Modern commercial dining space with sophisticated interior design and ambient lighting.",
     },
     {
-      title: "Harbour View Residences",
-      details: "Restaurant/Eatery located in the heart of Pretoria",
+      title: "Thorny bush estate",
+      details: "5 bedroom l 500m2 l Year 2025",
       images: [project10, project8, project6],
       description:
         "Modern commercial dining space with sophisticated interior design and ambient lighting.",
