@@ -1,5 +1,6 @@
 import { useState } from "react";
 import heroBackground from "@/assets/hero-background.jpg";
+import { motion } from "framer-motion";
 import logo from "@/assets/logo.png";
 
 export const HeroSection = () => {
@@ -135,19 +136,34 @@ export const HeroSection = () => {
         {/* Content */}
         <div className="relative z-10 text-center container-padding max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="space-y-4 sm:space-y-6 lg:space-y-8">
-            <h1 className="heading-display text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
+            <motion.h1
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              className="heading-display text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl"
+            >
               <span className="block">DESIGN BRILIANCE</span>
               <span className="block text-accent">UNLEASHED</span>
-            </h1>
+            </motion.h1>
 
-            <div className="text-white/80 text-sm sm:text-base md:text-lg max-w-2xl mx-auto">
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
+              className="text-white/80 text-sm sm:text-base md:text-lg max-w-2xl mx-auto"
+            >
               <p className="mb-2 leading-relaxed">
                 ARCHITECTURAL <span className="text-accent">DESIGN</span> | SPACEPLANNING{" "}
                 <span className="text-accent">DESIGN</span> | CONSTRUCTION | ARTIFECTS
               </p>
-            </div>
+            </motion.div>
 
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center pt-6 sm:pt-8">
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, ease: "easeOut", delay: 0.6 }}
+              className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center pt-6 sm:pt-8"
+            >
               <a
                 href="#portfolio"
                 className="bg-accent text-white px-6 sm:px-8 py-3 rounded-md font-semibold hover:bg-accent/90 transition-colors text-sm sm:text-base w-full sm:w-auto text-center"
@@ -160,7 +176,7 @@ export const HeroSection = () => {
               >
                 GET IN TOUCH
               </a>
-            </div>
+            </motion.div>
           </div>
         </div>
 

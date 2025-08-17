@@ -62,23 +62,49 @@ export const AboutSection = () => {
         </div>
 
         {/* Services */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+        {/* Left: Services */}
         <div>
-          <p className="text-sm font-semibold text-accent mb-6 sm:mb-8 tracking-wider">SERVICES</p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+          <p className="text-sm font-semibold text-accent mb-6 sm:mb-8 tracking-wider">
+            SERVICES
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
             {services.map((service, index) => (
-              <div key={index} className="group">
-                <div className="border-l-4 border-accent pl-4 sm:pl-6 hover:border-accent/70 transition-colors">
-                  <h3 className="text-base sm:text-lg font-bold mb-3 sm:mb-4 group-hover:text-accent transition-colors line-clamp-2">
-                    {service.title}
-                  </h3>
-                  <p className="text-muted-foreground leading-relaxed text-sm sm:text-base line-clamp-4">
-                    {service.description}
-                  </p>
+              <div
+                key={index}
+                className="group rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 bg-white"
+              >
+
+                {/* Text */}
+                <div className="p-5 sm:p-6">
+                  <div className="border-l-4 border-accent pl-4 sm:pl-6 hover:border-accent/70 transition-colors">
+                    <h3 className="text-base sm:text-lg font-bold mb-3 sm:mb-4 group-hover:text-accent transition-colors line-clamp-2">
+                      {service.title}
+                    </h3>
+                    <p className="text-muted-foreground leading-relaxed text-sm sm:text-base line-clamp-4">
+                      {service.description}
+                    </p>
+                  </div>
                 </div>
               </div>
             ))}
           </div>
         </div>
+
+        {/* Right: Architectural Picture + Historical Bio */}
+        <div className="hidden lg:flex flex-col space-y-4">
+          <img
+            src="https://images.unsplash.com/photo-1643830133432-2982b78d24f4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YXJjaGl0ZWN0dXJhbCUyMGRlc2lnbnN8ZW58MHx8MHx8fDA%3D"
+            alt="Architecture"
+            className="w-full h-[1200px] object-cover rounded-2xl shadow-lg"
+          />
+          <p className="text-muted-foreground italic text-sm leading-relaxed">
+            *This modernist building, inspired by 20th-century Bauhaus principles, reflects the harmony between simplicity and functionality. 
+            Designed with clean lines and open spaces, it echoes a timeless vision of architecture where art meets engineering.*
+          </p>
+        </div>
+      </div>
+
       </div>
     </section>
   );

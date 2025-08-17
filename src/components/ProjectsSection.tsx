@@ -4,7 +4,6 @@ import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-
 import project1 from "@/assets/project1.jpg";
 import project2 from "@/assets/project2.jpg";
 import project3 from "@/assets/project3.jpg";
@@ -19,6 +18,52 @@ import project1_2 from "@/assets/p1/project1_2.jpg";
 import project1_3 from "@/assets/p1/project1_3.jpg";
 import project1_4 from "@/assets/p1/project1_4.jpg";
 import project1_5 from "@/assets/p1/project1_5.jpg";
+import BAB_2 from "@/assets/p2/BAB_2.jpg";
+import BAB_3 from "@/assets/p2/BAB_3.jpg";
+import BAB_4 from "@/assets/p2/BAB_4.jpg";
+import BAB_5 from "@/assets/p2/BAB_5.jpg";
+import BASIL_1 from "@/assets/p3/BASIL_1.jpg";
+import BASIL_3 from "@/assets/p3/BASIL_3.jpg";
+import BASIL_10 from "@/assets/p3/BASIL_10.jpg";
+import BASIL_36 from "@/assets/p3/BASIL_36.jpg";
+import BASIL_38 from "@/assets/p3/BASIL_38.jpg";
+import BQKfin_13 from "@/assets/p4/BQKfin_13.jpg";
+import BQKfin_14 from "@/assets/p4/BQKfin_14.jpg";
+import BQKfin_15 from "@/assets/p4/BQKfin_15.jpg";
+import BQKfin_16 from "@/assets/p4/BQKfin_16.jpg";
+import CHRIS_1 from "@/assets/p5/CHRIS_1.jpg";
+import CHRIS_2 from "@/assets/p5/CHRIS_2.jpg";
+import CHRIS_4 from "@/assets/p5/CHRIS_4.jpg";
+import CHRIS_5 from "@/assets/p5/CHRIS_5.jpg";
+import CHRIS_10 from "@/assets/p5/CHRIS_10.jpg";
+import DER_1 from "@/assets/p6/DER_1.jpg";
+import DER_2 from "@/assets/p6/DER_2.jpg";
+import DER_3 from "@/assets/p6/DER_3.jpg";
+import DER_4 from "@/assets/p6/DER_4.jpg";
+import DER_5 from "@/assets/p6/DER_5.jpg";
+import frt_1 from "@/assets/p7/frt_1.jpg";
+import frt_3 from "@/assets/p7/frt_3.jpg";
+import frt_4 from "@/assets/p7/frt_4.jpg";
+import frt_5 from "@/assets/p7/frt_5.jpg";
+import frt_6 from "@/assets/p7/frt_6.jpg";
+import KWA_1 from "@/assets/p8/KWA_1.jpg";
+import KWA_2 from "@/assets/p8/KWA_2.jpg";
+import KWA_3 from "@/assets/p8/KWA_3.jpg";
+import KWA_4 from "@/assets/p8/KWA_3.jpg";
+import KWA_6 from "@/assets/p8/KWA_6.jpg";
+import NM_1 from "@/assets/p9/NM_1.jpg";
+import NM_2 from "@/assets/p9/NM_2.jpg";
+import NM_3 from "@/assets/p9/NM_3.jpg";
+import NM_4 from "@/assets/p9/NM_4.jpg";
+import NM_5 from "@/assets/p9/NM_5.jpg";
+import NN_1 from "@/assets/p10/NN_1.jpg";
+import NN_2 from "@/assets/p10/NN_2.jpg";
+import NN_3 from "@/assets/p10/NN_3.jpg";
+import NN_5 from "@/assets/p10/NN_5.jpg";
+import NN_8 from "@/assets/p10/NN_8.jpg";
+import NN_19 from "@/assets/p10/NN_19.jpg";
+
+
 
 
 export const ProjectsSection = () => {
@@ -33,63 +78,63 @@ export const ProjectsSection = () => {
     {
       title: "Sunward Park, Boksburg",
       details: "6 bedroom l 550m2 l Year 2022",
-      images: [project2, project1, project4],
+      images: [project2, BAB_2, BAB_3, BAB_4, BAB_5],
       description:
         "Contemporary family home featuring open-plan living and seamless indoor-outdoor flow.",
     },
     {
       title: "Seasons Lifestyle Estate",
       details: "5 bedrooms l 535m2 l Year 2023",
-      images: [project3, project5, project6],
+      images: [BASIL_1, BASIL_3, BASIL_10, BASIL_36, BASIL_38],
       description:
         "Modern commercial dining space with sophisticated interior design and ambient lighting.",
     },
     {
       title: "Ebotse golf & country estate ",
       details: "5 bedroom l 650m2 l Year 2020",
-      images: [project4, project6, project7],
+      images: [project4, BQKfin_13, BQKfin_14, BQKfin_15, BQKfin_16],
       description:
         "A contemporary mixed-use design that seamlessly integrates residential, retail, and commercial spaces into a cohesive, pedestrian-friendly environment.",
     },
     {
       title: "Akwande Glamping Bar and Restaurant",
       details: "Restaurant, Bar & Day club l 3000m2 l Year 2023",
-      images: [project5, project3, project8],
+      images: [CHRIS_1, CHRIS_2, CHRIS_4, CHRIS_5, CHRIS_10],
       description:
         "Modern commercial dining space with sophisticated interior design and ambient lighting.",
     },
     {
       title: "Parkmore, Sandton",
       details: "6 bedroom l 470m2 l Year 2021",
-      images: [project6, project1, project9],
+      images: [DER_1, DER_2, DER_3, DER_4, DER_5],
       description:
         "Modern commercial dining space with sophisticated interior design and ambient lighting.",
     },
     {
       title: "President Park, Midrand",
       details: "4 bedroom l 355m2 l Year 2022",
-      images: [project7, project4, project10],
+      images: [frt_1, frt_3, frt_4, frt_5, frt_6],
       description:
         "Modern commercial dining space with sophisticated interior design and ambient lighting.",
     },
     {
       title: "Summerplace Estate",
       details: "5 bedroom l 550m2 l Year 2024",
-      images: [project8, project2, project5],
+      images: [KWA_1, KWA_2, KWA_3, KWA_4, KWA_6],
       description:
         "Modern commercial dining space with sophisticated interior design and ambient lighting.",
     },
     {
       title: "Summerplace Estate",
       details: "5 bedroom l 550m2 l Year 2024",
-      images: [project9, project3, project7],
+      images: [NM_1, NM_2, NM_3, NM_4, NM_5],
       description:
         "Modern commercial dining space with sophisticated interior design and ambient lighting.",
     },
     {
       title: "Thorny bush estate",
       details: "5 bedroom l 500m2 l Year 2025",
-      images: [project10, project8, project6],
+      images: [NN_1, NN_2, NN_5, NN_8, NN_1],
       description:
         "Modern commercial dining space with sophisticated interior design and ambient lighting.",
     },
@@ -131,11 +176,6 @@ export const ProjectsSection = () => {
                     </SwiperSlide>
                   ))}
                 </Swiper>
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <div className="absolute bottom-4 left-4 right-4 text-primary-foreground">
-                    <p className="text-sm leading-relaxed">{project.description}</p>
-                  </div>
-                </div>
               </div>
 
               {/* Card Content */}
